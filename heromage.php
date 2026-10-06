@@ -14,9 +14,13 @@ var_dump($heromage);*/
 $heromage = [
     "nama" => ["Lunox","Pharsa"],
     "tipe" => ["Critical ","Burst"],
-    "damege" => [1000, 1500],
-];
+    "damage" => [100,88]
+    ];
 
-echo $heromage ["nama"][0];
-
-var_dump($heromage);
+    //iterasi 
+    foreach ($heromage as $key => $value) {
+        foreach ($value as $val) {
+        echo $val;
+        echo "<br/>";
+    }
+    }
