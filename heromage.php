@@ -1,6 +1,6 @@
 <?php
-//index dimulai dari 0
-/$heromage = [
+
+/*$heromage = [
     "Eudora",
     "Vexana",
     "Lunox",
@@ -8,8 +8,8 @@
     "Valir",
     "Cici",
 ];
-//vardump berfungsi untuk menampilkan isi dari sebuah variabel
-var_dump($heromage);
+
+var_dump($heromage);*/
 
 $heromage = [
     "nama" => ["Lunox","Pharsa"],
