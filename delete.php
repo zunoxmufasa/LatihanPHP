@@ -13,17 +13,13 @@ if ($connection->connect_error) {
 }
 
 //membuat sql string untuk insert data
-$sql = "INSERT INTO `latihanphp`.`table_nama_hero`(`nama_hero`,`tipe_hero`,`damage`) 
-VALUES ('Vexana','Midlaner',80),
-('Aurora','Midlaner',85),
-('Gusion','Jungler',90),
-('Lancelot','Jungler',95),
-('Harith','Goldlaner',100)";
-
+$sql = "DELETE FROM `latihanphp`.`table_nama_hero` WHERE id BETWEEN 10 AND 24";
+// between 10 and 24 adalah id yang akan dihapus, bisa diganti sesuai kebutuhan
+// cara bacanya dari 10 - 24, hapus semua data yang memiliki id diantara 10 sampai 24
 
 //eksekusi SQL  string untuk insert data
 if ($connection->query($sql) === TRUE) {
-    echo "Data berhasil ditambahkan";
+    echo "Data berhasil dihapus";
 } else {
     echo "Error: " . $sql . "<br>" . $connection->error;
 }
